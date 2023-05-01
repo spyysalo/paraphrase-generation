@@ -56,3 +56,19 @@ source scripts/node-setup.sh
 ```
 python3 train.py TurkuNLP/gpt3-finnish-3B --batch-size 4 --gradient-accumulation-steps 2 train.jsonl valid.jsonl
 ```
+
+This should produce output ending with
+
+```
+MODEL: TurkuNLP/gpt3-finnish-3B
+LEARGNING RATE: 1e-05
+BATCH SIZE: 4
+GRADIENT ACCUMULATION STEPS: 2
+FINAL VALIDATION LOSS: 1.38849675655365
+--- Fine-tuned model ---
+Muotoile seuraava teksti eri sanoin:
+
+Luettele seuraavassa tekstissä mainitut henkilönnimet.
+
+Kerro seuraavassa tekstissä mainittujen henkilöiden nimet.
+```
