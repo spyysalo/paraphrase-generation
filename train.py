@@ -34,7 +34,7 @@ PREFIX = 'Muotoile seuraava teksti eri sanoin:\n\n'
 
 def argparser():
     ap = ArgumentParser()
-    ap.add_argument('--learning-rate', type=float, default=5e-05)
+    ap.add_argument('--learning-rate', type=float, default=1e-05)
     ap.add_argument('--warmup-ratio', type=float, default=0.05)
     ap.add_argument('--batch-size', type=int, default=8)
     ap.add_argument('--gradient-accumulation-steps', type=int, default=1)
